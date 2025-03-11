@@ -1,0 +1,19 @@
+3 Rows of data coming from the Oracle select statment:
+
+column data:
+
+"data", "itemCount"
+
+{"STUDENTPIDM":1,"STUDENTID":111,"STUDENTNAME":"Presley, Elvis","AIDYEAR":"2425","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Wish he was still here"}, 3
+
+{"STUDENTPIDM":2,"STUDENTID":222,"STUDENTNAME":"Monroe, Mariln","AIDYEAR":"2324","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Really miss her."}, 3
+
+{"STUDENTPIDM":3,"STUDENTID":333,"STUDENTNAME":"Dean, James","AIDYEAR":"2425","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Cool Actor"}, 3
+
+
+The three rows above need to be converted to the format below within the Fetch statement:
+
+{
+data: [ { ..row 1 of "data"...}, { ..row 2 of "data"..}, { ..row 3 of "data"..} ...],
+itemsCount: n
+}
