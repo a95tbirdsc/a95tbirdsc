@@ -11,6 +11,13 @@ column data:
 {"STUDENTPIDM":3,"STUDENTID":333,"STUDENTNAME":"Dean, James","AIDYEAR":"2425","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Cool Actor"}, 3
 
 
+These three rows coming from the Oracle select statement would look like this after being fetched.  Don't have an example of the itemCount but I would assume just "3" after the "data" column.
+
+0 Object {"STUDENTPIDM":1,"STUDENTID":111,"STUDENTNAME":"Presley, Elvis","AIDYEAR":"2425","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Wish he was still here"}
+1 Object {"STUDENTPIDM":2,"STUDENTID":222,"STUDENTNAME":"Monroe, Mariln","AIDYEAR":"2324","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Really miss her."}
+2 Object {"STUDENTPIDM":3,"STUDENTID":333,"STUDENTNAME":"Dean, James","AIDYEAR":"2425","CATEGORY":"Deceased","CATEGORIES":null,"COMMENTS":"Cool Actor"}
+
+
 The three rows above need to be converted to the format below within the Fetch statement:
 
 {
